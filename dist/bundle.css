@@ -8,7 +8,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60px;
+  height: 64px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-align: center;
