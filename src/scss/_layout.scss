@@ -1,0 +1,14 @@
+html, body{
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: $priColor;
+  color: $textAndIcon;
+  display: flex;
+  height: 60px;
+  flex-shrink: 0;
+  div {
+    font-weight: bold;
+  }
+}

@@ -1,32 +1,27 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var prefix = require('gulp-autoprefixer');
-var browserSync = require('browser-sync');
+var gulp        = require('gulp');
+var browserSync = require('browser-sync').create();
+var sass        = require('gulp-sass');
+var prefix      = require('gulp-autoprefixer');
+var reload      = browserSync.reload;
 
-gulp.task('sass', function() {
-	gulp.src('src/css/main.scss')
-		.pipe(sass())
-		.pipe(prefix())
-		.pipe(gulp.dest('dist/'));
-});
+// 静态服务器 + 监听 scss/html 文件
+gulp.task('server', ['sass'], function() {
 
-gulp.task('browserSync', function() {
-    browserSync({
-        server: {
-            baseDir: '.'
-        }
+    browserSync.init({
+        server: "."
     });
+
+    gulp.watch("src/scss/*.scss", ['sass'], reload);
+    gulp.watch("*").on('change', reload);
 });
 
-gulp.task('watch', function(){
-    gulp.watch(['*'], ['rebuild']);
-});
-gulp.task('build', ['sass'], function() {
-    gulp.src('*')
-      .pipe(gulp.dest('..'));
-});
-gulp.task('rebuild', ['build'], function () {
-    browserSync.reload();
+// scss编译后的css将注入到浏览器里实现更新
+gulp.task('sass', function() {
+    return gulp.src("src/scss/*.scss")
+        .pipe(sass())
+        .pipe(prefix())
+        .pipe(gulp.dest("dist/"))
+        .pipe(reload({stream: true}));
 });
 
-gulp.task('default', ['browserSync', 'watch']);
+gulp.task('default', ['server']);
