@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Gulp + Webpack搭建新博客
+categories: 工具
 ---
 # Gulp + Webpack搭建新博客
-
-tags：工具
 
 ---
 
