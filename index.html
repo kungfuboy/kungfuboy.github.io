@@ -9,18 +9,6 @@
     </head>
     <body>
         <div id="container"></div>
-        ---
-        layout: default
-        title: 我的Blog
-        ---
-	      <div>
-          <p>最新文章</p>
-        　　<ul>
-        　　　　{% for post in site.posts %}
-        　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-        　　　　{% endfor %}
-        　　</ul>
-        </div>
         <script src="dist/bundle.js"></script>
     </body>
 </html>
