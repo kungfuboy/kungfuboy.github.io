@@ -12,7 +12,7 @@ html, body {
     padding: 0; }
     #post-list ul li {
       color: #929292;
-      border-bottom: 1px dashed #636363;
+      border-bottom: 1px dashed #a5a5a5;
       list-style-type: none;
       padding: 10px 0;
       display: -webkit-box;
