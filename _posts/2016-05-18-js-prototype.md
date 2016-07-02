@@ -7,17 +7,21 @@ title: 辞职第一天：Prototype(原型)
 我辞职的时候，手上的项目还没有完结，上完最后一天班，回到家里，兴奋地看了一遍《叶问3》，然后想再看看项目里的代码。
 
 CSS代码不用看啦，都是自己写的，熟的不能再熟了，于是专门找自己看不懂的，于是看到了这一段：
+
 ```
 Component.prototype.showLoading = function (divId) {
     $("#" + divId).empty().append("<div class='loading'><img src='static/images/loading.gif' /></div>");
 };
 ```
+
 我知道这段代码是干嘛的，所以无视里面的东西：
+
 ```
 Component.prototype.showLoading = function (**) {
     //balabalabala
 }
 ```
+
 唔……
 
 **prototype**？这是虾米？
