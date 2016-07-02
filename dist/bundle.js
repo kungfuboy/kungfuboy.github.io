@@ -27196,7 +27196,11 @@
 	            onLeftIconButtonTouchTap: this.handleToggle,
 	            onLeftIconButtonClick: this.handleToggle,
 	            style: styles.appBarStyle },
-	          _react2.default.createElement(_RaisedButton2.default, { label: 'Go to my blog', secondary: true, href: './myblog.html' })
+	          _react2.default.createElement(_RaisedButton2.default, {
+	            label: 'Go to my blog',
+	            secondary: true,
+	            linkButton: true,
+	            href: './myblog.html' })
 	        )
 	      );
 	    }

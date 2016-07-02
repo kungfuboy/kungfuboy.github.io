@@ -59,7 +59,11 @@ export default class Header extends Component  {
               onLeftIconButtonTouchTap={this.handleToggle}
               onLeftIconButtonClick={this.handleToggle}
               style={styles.appBarStyle}>
-                <RaisedButton label="Go to my blog" secondary={true} href="./myblog.html" />
+                <RaisedButton
+                  label="Go to my blog"
+                  secondary={true}
+                  linkButton={true}
+                  href="./myblog.html" />
             </AppBar>
           </div>
       );
