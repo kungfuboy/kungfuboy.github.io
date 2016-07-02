@@ -5,6 +5,9 @@ html, body {
 #post-list {
   max-width: 850px;
   margin: 0 auto; }
+  #post-list h3 {
+    font-weight: 100;
+    letter-spacing: 5px; }
   #post-list ul {
     padding: 0; }
     #post-list ul li {
