@@ -4,7 +4,7 @@ title: 你好，世界
 ---
 # Gulp + Webpack
 
-标签（空格分隔）：工具
+tags：工具
 
 ---
 
