@@ -47,6 +47,7 @@ export default class Header extends Component  {
               isInitiallyOpen={true}
               onLeftIconButtonTouchTap={this.handleToggle}
               onLeftIconButtonClick={this.handleToggle} />
+            <a href="./myblog.html">My blog</a>
           </div>
       );
   }
