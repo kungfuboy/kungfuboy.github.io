@@ -7,12 +7,12 @@ html, body {
   margin: 0 auto; }
   #post-list h3 {
     font-weight: 100;
-    letter-spacing: 5px; }
+    letter-spacing: 3px; }
   #post-list ul {
     padding: 0; }
     #post-list ul li {
       color: #929292;
-      border-bottom: 1px dashed #cfcfcf;
+      border-bottom: 1px dashed #636363;
       list-style-type: none;
       padding: 10px 0;
       display: -webkit-box;
@@ -21,9 +21,13 @@ html, body {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+      #post-list ul li:hover {
+        border-bottom: 1px dashed #cfcfcf; }
       #post-list ul li a {
         text-decoration: none;
         color: #D6DBDF; }
+        #post-list ul li a:hover {
+          color: #f7f7f7; }
 
 #post {
   max-width: 850px;
