@@ -10,7 +10,10 @@ CSS代码不用看啦，都是自己写的，熟的不能再熟了，于是专�
 
 ```
 Component.prototype.showLoading = function (divId) {
-    $("#" + divId).empty().append("<div class='loading'><img src='static/images/loading.gif' /></div>");
+    $("#" + divId).empty().append("
+      <div class='loading'>
+        <img src='static/images/loading.gif' />
+      </div>");
 };
 ```
 
