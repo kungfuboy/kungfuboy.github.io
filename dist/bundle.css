@@ -5,6 +5,12 @@ html, body {
 #post-list {
   max-width: 850px;
   margin: 0 auto; }
+  #post-list li {
+    color: #929292;
+    border-bottom: 1px dashed #cfcfcf; }
+    #post-list li a {
+      text-decoration: none;
+      color: #D6DBDF; }
 
 #post {
   max-width: 850px;
