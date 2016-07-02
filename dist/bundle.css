@@ -5,20 +5,22 @@ html, body {
 #post-list {
   max-width: 850px;
   margin: 0 auto; }
-  #post-list li {
-    color: #929292;
-    border-bottom: 1px dashed #cfcfcf;
-    list-style-type: none;
-    padding: 10px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    #post-list li a {
-      text-decoration: none;
-      color: #D6DBDF; }
+  #post-list ul {
+    padding: 0; }
+    #post-list ul li {
+      color: #929292;
+      border-bottom: 1px dashed #cfcfcf;
+      list-style-type: none;
+      padding: 10px 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      #post-list ul li a {
+        text-decoration: none;
+        color: #D6DBDF; }
 
 #post {
   max-width: 850px;

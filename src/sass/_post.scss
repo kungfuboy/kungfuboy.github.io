@@ -1,16 +1,19 @@
 #post-list {
   max-width: 850px;
   margin: 0 auto;
-  li {
-    color: #929292;
-    border-bottom: 1px dashed #cfcfcf;
-    list-style-type: none;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    a {
-      text-decoration: none;
-      color: #D6DBDF;
+  ul {
+    padding: 0;
+    li {
+      color: #929292;
+      border-bottom: 1px dashed #cfcfcf;
+      list-style-type: none;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      a {
+        text-decoration: none;
+        color: #D6DBDF;
+      }
     }
   }
 }
