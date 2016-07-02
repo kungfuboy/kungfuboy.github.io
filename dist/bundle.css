@@ -9,7 +9,7 @@ html, body {
     color: #929292;
     border-bottom: 1px dashed #cfcfcf;
     list-style-type: none;
-    margin: 10px; }
+    padding: 10px 0; }
     #post-list li a {
       text-decoration: none;
       color: #D6DBDF; }
