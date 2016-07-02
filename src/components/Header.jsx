@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Drawer, AppBar, MenuItem} from 'material-ui'
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme'
+import RaisedButton from 'material-ui/RaisedButton'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import { Link } from 'react-router'
 
@@ -31,6 +32,10 @@ export default class Header extends Component  {
         },
         linkStyle: {
           textDecoration: 'none'
+        },
+        appBarStyle: {
+          display: 'flex',
+          alignItems: 'center'
         }
       }
       return (
@@ -39,15 +44,23 @@ export default class Header extends Component  {
               docked={false}
               open={this.state.open}
               onRequestChange={(open) => this.setState({open})}>
-              <Link to="/home" style={styles.linkStyle}><MenuItem onTouchTap={this.handleClose}>首页</MenuItem></Link>
-              <Link to="/it" style={styles.linkStyle}><MenuItem onTouchTap={this.handleClose}>技术</MenuItem></Link>
-              <Link to="/think" style={styles.linkStyle}><MenuItem onTouchTap={this.handleClose}>随笔</MenuItem></Link>
+              <Link to="/home" style={styles.linkStyle}>
+                <MenuItem onTouchTap={this.handleClose}>首页</MenuItem>
+              </Link>
+              <Link to="/it" style={styles.linkStyle}>
+                <MenuItem onTouchTap={this.handleClose}>技术</MenuItem>
+              </Link>
+              <Link to="/think" style={styles.linkStyle}>
+                <MenuItem onTouchTap={this.handleClose}>随笔</MenuItem>
+              </Link>
             </Drawer>
-            <AppBar title="Night Eagle's blog"
+            <AppBar title="Night Eagle's Pages"
               isInitiallyOpen={true}
               onLeftIconButtonTouchTap={this.handleToggle}
-              onLeftIconButtonClick={this.handleToggle} />
-            <a href="./myblog.html">My blog</a>
+              onLeftIconButtonClick={this.handleToggle}
+              style={styles.appBarStyle}>
+                <RaisedButton label="Go to my blog" secondary={true} href="./myblog.html" />
+            </AppBar>
           </div>
       );
   }
