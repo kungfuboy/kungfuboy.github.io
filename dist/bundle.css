@@ -23,3 +23,19 @@ header {
 #post {
   max-width: 850px;
   margin: 0 auto; }
+  #post h1 {
+    margin: 50px 0 20px;
+    font-weight: 500; }
+  #post hr {
+    border: 0;
+    border-bottom: 1px dashed #cfcfcf;
+    margin: 30px 0; }
+  #post p {
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 27px; }
+  #post pre {
+    font-size: 14px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px; }
