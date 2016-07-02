@@ -19,3 +19,7 @@ header {
     font-size: 24px;
     padding: 0 14px;
     box-sizing: border-box; }
+
+#post {
+  max-width: 850px;
+  margin: 0 auto; }
