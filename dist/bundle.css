@@ -49,3 +49,5 @@ html, body {
     padding: 10px 10px 10px 30px;
     border-radius: 4px;
     box-sizing: border-box; }
+  #post a {
+    color: #1068ef; }
