@@ -34,7 +34,8 @@ html, body {
   margin: 0 auto; }
   #post h1 {
     margin: 50px 0 20px;
-    font-weight: 500; }
+    font-weight: 500;
+    font-size: 20px; }
   #post hr {
     border: 0;
     border-bottom: 1px dashed #cfcfcf;
