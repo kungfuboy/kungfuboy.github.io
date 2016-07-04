@@ -27,8 +27,7 @@ export default class Header extends Component  {
   render() {
       let styles = {
         headerStyle: {
-          display: 'flex',
-          flex: 1
+          display: 'flex'
         },
         linkStyle: {
           textDecoration: 'none'

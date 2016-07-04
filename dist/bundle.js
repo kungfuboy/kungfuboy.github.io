@@ -27127,8 +27127,7 @@
 	
 	      var styles = {
 	        headerStyle: {
-	          display: 'flex',
-	          flex: 1
+	          display: 'flex'
 	        },
 	        linkStyle: {
 	          textDecoration: 'none'
@@ -67471,11 +67470,75 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	var styles = {
+	  webStyle: {
+	    display: 'flex',
+	    flex: 1,
+	    flexDirection: 'column',
+	    justifyContent: 'center',
+	    backgroundColor: '#0f9d58',
+	    alignItems: 'center',
+	    flexShrink: 0
+	  },
+	  mainStyle: {
+	    display: 'flex',
+	    flexDirection: 'row',
+	    justifyContent: 'space-between',
+	    width: '920px',
+	    flexShrink: 0,
+	    flexWrap: 'wrap'
+	  },
+	  papersStyle: {
+	    width: '250px',
+	    height: '250px',
+	    display: 'flex',
+	    flexShrink: 0,
+	    margin: '30px 0',
+	    backgroundColor: '#ffffff'
+	  },
+	  logoStyle: {
+	    width: '100%',
+	    height: 'auto'
+	  }
+	};
 	var Web = function Web() {
 	  return _react2.default.createElement(
 	    'div',
-	    null,
-	    'Web技术'
+	    { style: styles.webStyle },
+	    _react2.default.createElement(
+	      'div',
+	      { style: styles.mainStyle, className: 'papers' },
+	      _react2.default.createElement(
+	        'a',
+	        { style: styles.papersStyle, href: 'http://www.baidu.com', target: 'view_window' },
+	        _react2.default.createElement('img', { style: styles.logoStyle, src: '../asset/images/react-logo.png' })
+	      ),
+	      _react2.default.createElement(
+	        'a',
+	        { style: styles.papersStyle },
+	        _react2.default.createElement('img', { style: styles.logoStyle, src: '../asset/images/nodejs-logo.png' })
+	      ),
+	      _react2.default.createElement(
+	        'a',
+	        { style: styles.papersStyle },
+	        _react2.default.createElement('img', { style: styles.logoStyle, src: '../asset/images/gulp-logo.png' })
+	      ),
+	      _react2.default.createElement(
+	        'a',
+	        { style: styles.papersStyle },
+	        _react2.default.createElement('img', { style: styles.logoStyle, src: '../asset/images/webpack-logo.png' })
+	      ),
+	      _react2.default.createElement(
+	        'a',
+	        { style: styles.papersStyle },
+	        _react2.default.createElement('img', { style: styles.logoStyle, src: '../asset/images/js-logo.png' })
+	      ),
+	      _react2.default.createElement(
+	        'a',
+	        { style: styles.papersStyle },
+	        _react2.default.createElement('img', { style: styles.logoStyle, src: '../asset/images/github-logo.png' })
+	      )
+	    )
 	  );
 	};
 	
