@@ -47,8 +47,8 @@ export default class Header extends Component  {
               <Link to="/home" style={styles.linkStyle}>
                 <MenuItem onTouchTap={this.handleClose}>首页</MenuItem>
               </Link>
-              <Link to="/it" style={styles.linkStyle}>
-                <MenuItem onTouchTap={this.handleClose}>技术</MenuItem>
+              <Link to="/web" style={styles.linkStyle}>
+                <MenuItem onTouchTap={this.handleClose}>Web相关技术</MenuItem>
               </Link>
               <Link to="/think" style={styles.linkStyle}>
                 <MenuItem onTouchTap={this.handleClose}>随笔</MenuItem>
@@ -60,7 +60,7 @@ export default class Header extends Component  {
               onLeftIconButtonClick={this.handleToggle}
               style={styles.appBarStyle}>
                 <RaisedButton
-                  label="Go to my blog"
+                  label="My Github"
                   secondary={true}
                   linkButton={true}
                   href="./myblog.html" />
