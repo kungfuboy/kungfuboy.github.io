@@ -26966,13 +26966,9 @@
 	
 	var _Home2 = _interopRequireDefault(_Home);
 	
-	var _Web = __webpack_require__(/*! ./Web */ 594);
+	var _Web = __webpack_require__(/*! ./Web */ 593);
 	
 	var _Web2 = _interopRequireDefault(_Web);
-	
-	var _Think = __webpack_require__(/*! ./Think */ 593);
-	
-	var _Think2 = _interopRequireDefault(_Think);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -26981,8 +26977,7 @@
 	  { path: '/', component: _App2.default },
 	  _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/home', component: _Home2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/web', component: _Web2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/think', component: _Think2.default })
+	  _react2.default.createElement(_reactRouter.Route, { path: '/web', component: _Web2.default })
 	);
 
 /***/ },
@@ -27165,15 +27160,6 @@
 	              { onTouchTap: this.handleClose },
 	              'Web相关技术'
 	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: '/think', style: styles.linkStyle },
-	            _react2.default.createElement(
-	              _materialUi.MenuItem,
-	              { onTouchTap: this.handleClose },
-	              '随笔'
-	            )
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -27187,7 +27173,7 @@
 	            label: 'My Github',
 	            secondary: true,
 	            linkButton: true,
-	            href: './myblog.html' })
+	            href: 'https://github.com/kungfuboy' })
 	        )
 	      );
 	    }
@@ -67276,13 +67262,41 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _getMuiTheme = __webpack_require__(/*! material-ui/styles/getMuiTheme */ 376);
+	
+	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
+	
+	var _MuiThemeProvider = __webpack_require__(/*! material-ui/styles/MuiThemeProvider */ 375);
+	
+	var _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);
+	
+	var _RaisedButton = __webpack_require__(/*! material-ui/RaisedButton */ 535);
+	
+	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var styles = {
+	  webStyle: {
+	    display: 'flex',
+	    flex: 1,
+	    flexDirection: 'column',
+	    justifyContent: 'center',
+	    backgroundColor: '#00bcd4',
+	    alignItems: 'center',
+	    flexShrink: 0
+	  }
+	};
 	
 	var Home = function Home() {
 	  return _react2.default.createElement(
 	    'div',
-	    null,
-	    'Home'
+	    { style: styles.webStyle },
+	    _react2.default.createElement(
+	      _MuiThemeProvider2.default,
+	      { muiTheme: (0, _getMuiTheme2.default)() },
+	      _react2.default.createElement(_RaisedButton2.default, { href: './web前端个人简历.pdf', label: '点击下载我的简历', secondary: true, linkButton: true })
+	    )
 	  );
 	};
 	
@@ -67290,169 +67304,6 @@
 
 /***/ },
 /* 593 */
-/*!**********************************!*\
-  !*** ./src/components/Think.jsx ***!
-  \**********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Think = function Think() {
-	  return _react2.default.createElement(
-	    "ul",
-	    null,
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "li",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "" },
-	        "辞职第一天"
-	      )
-	    )
-	  );
-	};
-	
-	exports.default = Think;
-
-/***/ },
-/* 594 */
 /*!********************************!*\
   !*** ./src/components/Web.jsx ***!
   \********************************/
@@ -67510,32 +67361,32 @@
 	      { style: styles.mainStyle, className: 'papers' },
 	      _react2.default.createElement(
 	        'a',
-	        { style: styles.papersStyle, href: 'http://www.baidu.com', target: 'view_window' },
+	        { style: styles.papersStyle, href: 'https://www.zybuluo.com/kungfuboy/note/427352', target: 'view_window' },
 	        _react2.default.createElement('img', { style: styles.logoStyle, src: '../asset/images/react-logo.png' })
 	      ),
 	      _react2.default.createElement(
 	        'a',
-	        { style: styles.papersStyle },
+	        { style: styles.papersStyle, href: 'https://www.zybuluo.com/kungfuboy/note/427358', target: 'view_window' },
 	        _react2.default.createElement('img', { style: styles.logoStyle, src: '../asset/images/nodejs-logo.png' })
 	      ),
 	      _react2.default.createElement(
 	        'a',
-	        { style: styles.papersStyle },
+	        { style: styles.papersStyle, href: 'https://www.zybuluo.com/kungfuboy/note/427362', target: 'view_window' },
 	        _react2.default.createElement('img', { style: styles.logoStyle, src: '../asset/images/gulp-logo.png' })
 	      ),
 	      _react2.default.createElement(
 	        'a',
-	        { style: styles.papersStyle },
+	        { style: styles.papersStyle, href: 'https://www.zybuluo.com/kungfuboy/note/427355', target: 'view_window' },
 	        _react2.default.createElement('img', { style: styles.logoStyle, src: '../asset/images/webpack-logo.png' })
 	      ),
 	      _react2.default.createElement(
 	        'a',
-	        { style: styles.papersStyle },
+	        { style: styles.papersStyle, href: 'https://www.zybuluo.com/kungfuboy/note/427366', target: 'view_window' },
 	        _react2.default.createElement('img', { style: styles.logoStyle, src: '../asset/images/js-logo.png' })
 	      ),
 	      _react2.default.createElement(
 	        'a',
-	        { style: styles.papersStyle },
+	        { style: styles.papersStyle, href: 'https://www.zybuluo.com/kungfuboy/note/427368', target: 'view_window' },
 	        _react2.default.createElement('img', { style: styles.logoStyle, src: '../asset/images/github-logo.png' })
 	      )
 	    )

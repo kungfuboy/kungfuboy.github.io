@@ -34,22 +34,22 @@ let styles = {
 const Web = () => (
   <div style={styles.webStyle}>
     <div style={styles.mainStyle} className="papers">
-      <a style={styles.papersStyle} href="http://www.baidu.com" target="view_window">
+      <a style={styles.papersStyle} href="https://www.zybuluo.com/kungfuboy/note/427352" target="view_window">
         <img style={styles.logoStyle} src="../asset/images/react-logo.png" />
       </a>
-      <a style={styles.papersStyle}>
+      <a style={styles.papersStyle} href="https://www.zybuluo.com/kungfuboy/note/427358" target="view_window">
         <img style={styles.logoStyle} src="../asset/images/nodejs-logo.png" />
       </a>
-      <a style={styles.papersStyle}>
+      <a style={styles.papersStyle} href="https://www.zybuluo.com/kungfuboy/note/427362" target="view_window">
         <img style={styles.logoStyle} src="../asset/images/gulp-logo.png" />
       </a>
-      <a style={styles.papersStyle}>
+      <a style={styles.papersStyle} href="https://www.zybuluo.com/kungfuboy/note/427355" target="view_window">
         <img style={styles.logoStyle} src="../asset/images/webpack-logo.png" />
       </a>
-      <a style={styles.papersStyle}>
+      <a style={styles.papersStyle} href="https://www.zybuluo.com/kungfuboy/note/427366" target="view_window">
         <img style={styles.logoStyle} src="../asset/images/js-logo.png" />
       </a>
-      <a style={styles.papersStyle}>
+      <a style={styles.papersStyle} href="https://www.zybuluo.com/kungfuboy/note/427368" target="view_window">
         <img style={styles.logoStyle} src="../asset/images/github-logo.png" />
       </a>
     </div>

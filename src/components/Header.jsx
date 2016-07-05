@@ -49,9 +49,6 @@ export default class Header extends Component  {
               <Link to="/web" style={styles.linkStyle}>
                 <MenuItem onTouchTap={this.handleClose}>Web相关技术</MenuItem>
               </Link>
-              <Link to="/think" style={styles.linkStyle}>
-                <MenuItem onTouchTap={this.handleClose}>随笔</MenuItem>
-              </Link>
             </Drawer>
             <AppBar title="Night Eagle's Pages"
               isInitiallyOpen={true}
@@ -62,7 +59,7 @@ export default class Header extends Component  {
                   label="My Github"
                   secondary={true}
                   linkButton={true}
-                  href="./myblog.html" />
+                  href="https://github.com/kungfuboy" />
             </AppBar>
           </div>
       );
