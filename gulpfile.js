@@ -11,13 +11,13 @@ gulp.task('server', ['sass'], function() {
         server: "."
     });
 
-    gulp.watch("src/sass/*.scss", ['sass'], reload);
+    gulp.watch("src/style/*.scss", ['sass'], reload);
     gulp.watch("*").on('change', reload);
 });
 
 // scss编译后的css将注入到浏览器里实现更新
 gulp.task('sass', function() {
-    return gulp.src("src/sass/*.scss")
+    return gulp.src("src/style/*.scss")
         .pipe(sass())
         .pipe(prefix())
         .pipe(gulp.dest("dist/"))
