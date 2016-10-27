@@ -13,15 +13,117 @@ html {
 
 header {
   height: 66px;
-  background-color: $red;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 1px 8px rgba(0,0,0,.3);
 }
 
 section {
   flex: 1;
   display: flex;
   flex-direction: column;
+  .section-menu {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding-top: 14px;
+
+    a {
+      text-decoration: none;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      color: $blodText;
+      &:hover {
+        background-color: rgba(0,0,0,0.02);
+      }
+      .material-icons {
+        color: #757575;
+        margin: 0 15px;
+      }
+    }
+    a.active-home {
+      color: $red;
+      .material-icons {
+        color: inherit;
+      }
+    }
+    a.active-works {
+      color: $blue;
+      .material-icons {
+        color: inherit;
+      }
+    }
+    a.active-about {
+      color: $green;
+      .material-icons {
+        color: inherit;
+      }
+    }
+  }
+}
+
+div.mobile-sidebar {
+  width: 75%;
+  background-color: $while;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2);
+  // height: 100%;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-size: 22px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    span {
+      color: $dark;
+    }
+    i.material-icons {
+      color: $dark;
+      font-size: 38px;
+    }
+  }
+  div.mobile-menu {
+    a {
+      text-decoration: none;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      color: $blodText;
+      &:hover {
+        background-color: rgba(0,0,0,0.02);
+      }
+      .material-icons {
+        color: #757575;
+        margin: 0 15px;
+      }
+    }
+    a.mobile-active-home {
+      color: $red;
+      .material-icons {
+        color: inherit;
+      }
+    }
+    a.mobile-active-works {
+      color: $blue;
+      .material-icons {
+        color: inherit;
+      }
+    }
+    a.mobile-active-about {
+      color: $green;
+      .material-icons {
+        color: inherit;
+      }
+    }
+  }
 }

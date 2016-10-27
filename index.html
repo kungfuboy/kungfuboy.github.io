@@ -14,13 +14,87 @@
     <div class="header-menu">
       <i class="material-icons">menu</i>
     </div>
-    <div class="header-title">Eagle</div>
+    <div class="header-title">Night Eagle</div>
     <div class="header-icon">
       <img src="/asset/images/head-icon.jpeg" />
     </div>
   </header>
   <section>
-aaa
+    <div class="section-menu" style="display: none;">
+        <a href="#/" id="active-home"><i class="material-icons">account_balance</i>This Site</a>
+
+        <a href="#/works" id="active-works"><i class="material-icons">toys</i>My works</a>
+
+        <a href="#/about" id="active-about"><i class="material-icons">folder_shared</i>About me</a>
+    </div>
+
   </section>
+  <div class="mobile-sidebar">
+    <nav>
+      <span>Night Eagle</span>
+      <i class="material-icons">keyboard_arrow_left</i>
+    </nav>
+    <div class="mobile-menu">
+      <a href="#/" id="mobile-active-home"><i class="material-icons">account_balance</i>This Site</a>
+
+      <a href="#/works" id="mobile-active-works"><i class="material-icons">toys</i>My works</a>
+
+      <a href="#/about" id="mobile-active-about"><i class="material-icons">folder_shared</i>About me</a>
+    </div>
+  </div>
+  <script type="text/javascript" src="/src/script/router.js"></script>
+  <script type="text/javascript">
+
+    function changeBg(color, id, m_id) {
+      // change backgroundColor of header and menu color
+      document.querySelector('header').style.backgroundColor = color;
+      Array.prototype.map.call(
+        document.getElementsByClassName("section-menu")[0].children, function(n) {
+          n.setAttribute('class', '');
+      });
+      document.getElementById(id).setAttribute('class', id);
+      Array.prototype.map.call(
+        document.getElementsByClassName("mobile-menu")[0].children, function(n) {
+          n.setAttribute('class', '');
+      });
+      document.getElementById(m_id).setAttribute('class', m_id);
+    }
+
+    document.getElementsByClassName('mobile-sidebar')[0].addEventListener('click', function() {
+      var that = this;
+      var p = parseFloat(that.style.left) || that.offsetLeft;
+      setInterval(function(){
+          if(p > -75) {
+            p = p - 3;
+            that.style.left = p + "%";
+          } else {
+            clearInterval();
+          }
+      },1);
+    });
+
+    document.getElementsByClassName('header-menu')[0].addEventListener('click', function() {
+      var that = document.getElementsByClassName('mobile-sidebar')[0];
+      var p = parseFloat(that.style.left) || that.offsetLeft;
+      setInterval(function(){
+          if(p < 0) {
+            p = p + 3;
+            that.style.left = p + "%";
+          } else {
+            clearInterval();
+          }
+      },1);
+    });
+
+    Router.route('/', function() {
+      changeBg('#db4437', 'active-home', 'mobile-active-home');
+    });
+    Router.route('/works', function() {
+      changeBg('#03a9f4', 'active-works', 'mobile-active-works');
+    });
+    Router.route('/about', function() {
+      changeBg('#0f9d58', 'active-about', 'mobile-active-about');
+    });
+  </script>
 </body>
 </html>
