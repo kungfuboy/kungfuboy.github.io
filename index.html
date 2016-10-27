@@ -62,29 +62,31 @@
 
     document.getElementsByClassName('mobile-sidebar')[0].addEventListener('click', function() {
       var that = this;
-      var p = parseFloat(that.style.left) || that.offsetLeft;
-      setInterval(function(){
-          if(p > -75) {
-            p = p - 3;
-            that.style.left = p + "%";
-          } else {
-            clearInterval();
-          }
-      },1);
+      sidebarMove(that)
     });
 
     document.getElementsByClassName('header-menu')[0].addEventListener('click', function() {
       var that = document.getElementsByClassName('mobile-sidebar')[0];
+      sidebarMove(that);
+    });
+
+    function sidebarMove(that) {
       var p = parseFloat(that.style.left) || that.offsetLeft;
+      var f = (p == 0) ? true : false;
+      // console.log(f);
       setInterval(function(){
-          if(p < 0) {
+          if(f && p > -75) {
+            p = p - 3;
+            that.style.left = p + "%";
+            // console.log('+' + p);
+          } else if(!f && p < 0) {
             p = p + 3;
             that.style.left = p + "%";
-          } else {
-            clearInterval();
+            // console.log('-' + p);
           }
       },1);
-    });
+      clearInterval();
+    }
 
     Router.route('/', function() {
       changeBg('#db4437', 'active-home', 'mobile-active-home');
