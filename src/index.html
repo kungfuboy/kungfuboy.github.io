@@ -26,7 +26,7 @@
         <i class="material-icons">keyboard_arrow_left</i>
       </nav>
       <div class="mobile-menu">
-        <a href="#/" id="mobile-active-home"><i class="material-icons">account_balance</i>This Site</a>
+        <a href="#/" id="mobile-active-home"><i class="material-icons">account_balance</i>Home</a>
 
         <a href="#/works" id="mobile-active-works"><i class="material-icons">toys</i>My works</a>
 
@@ -35,7 +35,7 @@
     </div>
 
     <div class="pc-menu">
-        <a href="#/" id="active-home"><i class="material-icons">account_balance</i>This Site</a>
+        <a href="#/" id="active-home"><i class="material-icons">account_balance</i>Home</a>
 
         <a href="#/works" id="active-works"><i class="material-icons">toys</i>My works</a>
 
@@ -46,8 +46,9 @@
     </div>
   </section>
 
-  <div id="external-html" style="">
+  <div id="external-html" style="display:none;">
     @import "home.html"
+    @import "works.html"
     @import "about.html"
 
   </div>
@@ -102,18 +103,15 @@
 
     Router.route('/', function() {
       changeBg('#db4437', 'active-home', 'mobile-active-home');
-      // test1 = document.getElementById('home').innerHTML;
-      // console.log(test1);
-      // document.getElementById('content').innerHTML = test1;
+      document.getElementById('content').innerHTML = document.getElementById('home').innerHTML;
     });
     Router.route('/works', function() {
       changeBg('#03a9f4', 'active-works', 'mobile-active-works');
-      // test2 = document.getElementById('test2').innerHTML;
-      // console.log(test2.innerHTML);
-      // document.getElementById('content').innerHTML = test2;
+      document.getElementById('content').innerHTML = document.getElementById('works').innerHTML;
     });
     Router.route('/about', function() {
       changeBg('#0f9d58', 'active-about', 'mobile-active-about');
+      document.getElementById('content').innerHTML = document.getElementById('about').innerHTML;
     });
   </script>
 </body>

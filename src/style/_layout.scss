@@ -5,9 +5,12 @@ html {
     margin: 0;
     background-color: $bgc;
     display: flex;
+    flex: 1;
+    flex-shrink: 0;
     flex-direction: column;
     font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
     font-size: 16px;
+    box-sizing: border-box;
   }
 }
 
@@ -15,6 +18,7 @@ header {
   height: 66px;
   width: 100%;
   display: flex;
+  flex-shrink: 0;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 1px 8px rgba(0,0,0,.3);
@@ -22,9 +26,12 @@ header {
 }
 
 section {
-  flex: 1;
   display: flex;
+  flex: 1;
+  overflow: hidden;
   flex-direction: column;
+  flex-shrink: 0;
+  box-sizing: border-box;
   .pc-menu {
     display: flex;
     flex-direction: column;

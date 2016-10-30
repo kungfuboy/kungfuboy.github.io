@@ -1,0 +1,17 @@
+#content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+#home {
+
+}
+
+#about {
+  display: flex;
+  flex: 1;
+  flex-shrink: 0;
+}
