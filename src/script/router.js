@@ -16,18 +16,7 @@ Router.prototype.init = function() {
 window.Router = new Router();
 window.Router.init();
 
-Router.route('/', function() {
-  changeBg('#db4437', 'active-home', 'mobile-active-home');
-  document.getElementById('content').innerHTML = document.getElementById('home').innerHTML;
-});
-Router.route('/works', function() {
-  changeBg('#03a9f4', 'active-works', 'mobile-active-works');
-  document.getElementById('content').innerHTML = document.getElementById('works').innerHTML;
-});
-Router.route('/about', function() {
-  changeBg('#0f9d58', 'active-about', 'mobile-active-about');
-  document.getElementById('content').innerHTML = document.getElementById('about').innerHTML;
-});
+
 
 
 function changeBg(color, id, m_id) {
