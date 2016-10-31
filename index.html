@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -162,10 +162,10 @@
   <script type="text/javascript" src="/src/script/move.js"></script>
   <script type="text/javascript">
 
-    window.onload = function() {
-      init();
-      photo();
-    }
+      window.onload = function() {
+        init();
+        photo();
+      }
 
     function init() {
       var sw = document.body.clientWidth;
@@ -228,18 +228,7 @@
         h.addEventListener('click', sideMenuMove, false);
     }
 
-    Router.route('/', function() {
-      changeBg('#db4437', 'active-home', 'mobile-active-home');
-      document.getElementById('content').innerHTML = document.getElementById('home').innerHTML;
-    });
-    Router.route('/works', function() {
-      changeBg('#03a9f4', 'active-works', 'mobile-active-works');
-      document.getElementById('content').innerHTML = document.getElementById('works').innerHTML;
-    });
-    Router.route('/about', function() {
-      changeBg('#0f9d58', 'active-about', 'mobile-active-about');
-      document.getElementById('content').innerHTML = document.getElementById('about').innerHTML;
-    });
+
   </script>
 </body>
 </html>

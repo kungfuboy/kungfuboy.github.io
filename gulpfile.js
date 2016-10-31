@@ -7,7 +7,7 @@ var htmlImport  = require('gulp-html-import');
 
 // 将所有的文件打包进index.html后实现更新
 gulp.task('import', function() {
-    return gulp.src('src/index.html')
+    return gulp.src('src/components/index.html')
         .pipe(htmlImport('src/components/'))
         .pipe(gulp.dest('.'))
         .pipe(reload({stream: true}));
