@@ -218,14 +218,143 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  overflow-y: scroll; }
-
-#about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-negative: 0;
-      flex-shrink: 0; }
+  overflow-y: scroll;
+  padding: 0 20px 20px; }
+  #content .about-content {
+    position: relative; }
+    #content .about-content img {
+      position: absolute;
+      width: 120px;
+      right: 0;
+      top: 26px;
+      border: 2px dashed #0f9d58; }
+    #content .about-content h1 {
+      color: rgba(0, 0, 0, 0.87);
+      font-weight: 400;
+      margin-bottom: 0.5em; }
+    #content .about-content span {
+      color: #0f9d58; }
+    #content .about-content p {
+      color: rgba(0, 0, 0, 0.54);
+      line-height: 1.6;
+      margin: 0 0 0.7em; }
+    @media (min-width: 700px) and (max-width: 1000px) {
+      #content .about-content {
+        width: 90%;
+        margin: auto; } }
+    @media (min-width: 1000px) {
+      #content .about-content {
+        width: 800px;
+        margin: auto; } }
+  #content .works-content {
+    padding: 20px; }
+    #content .works-content a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+      background-color: #FFFFFF;
+      width: 95%;
+      margin: auto;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.54);
+      padding: 12px;
+      box-sizing: border-box;
+      -webkit-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+      margin-bottom: 1em; }
+      #content .works-content a:hover {
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.4); }
+      #content .works-content a img {
+        width: 100%;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+      #content .works-content a p {
+        margin: 0;
+        text-indent: 2em;
+        padding-left: 10px;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        line-height: 1.5em;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      @media (min-width: 700px) and (max-width: 1000px) {
+        #content .works-content a {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; }
+          #content .works-content a img {
+            width: 140px;
+            height: 140px;
+            -ms-flex-negative: 0;
+                flex-shrink: 0; } }
+      @media (min-width: 1000px) {
+        #content .works-content a {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          width: 800px; }
+          #content .works-content a img {
+            width: 140px;
+            height: 140px;
+            -ms-flex-negative: 0;
+                flex-shrink: 0; } }
+  #content .home-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%; }
+    @media (min-width: 1201px) {
+      #content .home-content {
+        width: 1280px;
+        margin: auto; } }
+    #content .home-content h2 {
+      width: 100%;
+      font-weight: 100;
+      color: rgba(0, 0, 0, 0.54);
+      text-align: center;
+      margin: 40px 0; }
+    #content .home-content a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+      background-color: #FFFFFF;
+      width: 44%;
+      margin: 10px 3%;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.54);
+      padding: 12px;
+      box-sizing: border-box;
+      -webkit-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
+      #content .home-content a:hover {
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.4); }
+      @media (min-width: 900px) and (max-width: 1280px) {
+        #content .home-content a {
+          width: 26%;
+          margin: 20px 3.5%; } }
+      @media (min-width: 1281px) {
+        #content .home-content a {
+          width: 19%;
+          margin: 20px 3%; } }
+      #content .home-content a img {
+        width: 100%; }
+      #content .home-content a .books-title {
+        margin-top: 20px;
+        text-align: center; }
