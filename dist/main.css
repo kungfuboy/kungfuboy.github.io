@@ -315,9 +315,9 @@ header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%; }
-    @media (min-width: 1201px) {
+    @media (min-width: 1281px) {
       #content .home-content {
-        width: 1280px;
+        width: 1080px;
         margin: auto; } }
     #content .home-content h2 {
       width: 100%;
