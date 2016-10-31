@@ -45,7 +45,9 @@
 
     </div>
   </section>
+  <div id="backbg" class="backbg">
 
+  </div>
   <div id="external-html" style="display:none;">
     <div id="home">
   <div class="home-content">
@@ -108,7 +110,7 @@
     <div id="about">
 
   <div class="about-content">
-  <img src="asset/images/myphoto.jpeg" />
+  <img id="myphoto" src="asset/images/myphoto.jpeg" />
   <h1>本人概况</h1>
     <p>男、珠海、23岁</p>
     <p>前端经验：2年</p>
@@ -162,6 +164,7 @@
 
     window.onload = function() {
       init();
+      photo();
     }
 
     function init() {
@@ -183,6 +186,27 @@
           pcInit();
         }
       });
+
+    }
+
+    function photo() {
+      var p = document.getElementById('myphoto'), b = document.getElementById('backbg');
+      p.addEventListener('click', photoShow, false);
+
+      function photoShow() {
+        // p.removeEventListener('click', photoShow, false);
+        b.style.display = 'block';
+        p.className = 'showphoto';
+        p.removeEventListener('click', photoShow, false);
+        p.addEventListener('click', photoHide, false);
+      }
+
+      function photoHide() {
+        b.style.display = 'none';
+        p.className = '';
+        p.removeEventListener('click', photoHide, false);
+        p.addEventListener('click', photoShow, false);
+      }
     }
 
     function mobileInit() {

@@ -18,7 +18,8 @@ html {
             flex-direction: column;
     font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
     font-size: 16px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    position: relative; }
 
 header {
   height: 66px;
@@ -175,6 +176,15 @@ div.mobile-sidebar {
     div.mobile-sidebar div.mobile-menu a.mobile-active-about .material-icons {
       color: inherit; }
 
+div.backbg {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); }
+
 header {
   color: #FFFFFF; }
   header .header-menu {
@@ -227,7 +237,20 @@ header {
       width: 120px;
       right: 0;
       top: 26px;
-      border: 2px dashed #0f9d58; }
+      border: 2px dashed #0f9d58;
+      z-index: 12;
+      -webkit-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+      cursor: pointer; }
+    #content .about-content img.showphoto {
+      position: fixed;
+      width: auto;
+      height: 80%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto; }
     #content .about-content h1 {
       color: rgba(0, 0, 0, 0.87);
       font-weight: 400;

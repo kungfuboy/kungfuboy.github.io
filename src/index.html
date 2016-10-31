@@ -45,7 +45,9 @@
 
     </div>
   </section>
+  <div id="backbg" class="backbg">
 
+  </div>
   <div id="external-html" style="display:none;">
     @import "home.html"
     @import "works.html"
@@ -59,6 +61,7 @@
 
     window.onload = function() {
       init();
+      photo();
     }
 
     function init() {
@@ -80,6 +83,27 @@
           pcInit();
         }
       });
+
+    }
+
+    function photo() {
+      var p = document.getElementById('myphoto'), b = document.getElementById('backbg');
+      p.addEventListener('click', photoShow, false);
+
+      function photoShow() {
+        // p.removeEventListener('click', photoShow, false);
+        b.style.display = 'block';
+        p.className = 'showphoto';
+        p.removeEventListener('click', photoShow, false);
+        p.addEventListener('click', photoHide, false);
+      }
+
+      function photoHide() {
+        b.style.display = 'none';
+        p.className = '';
+        p.removeEventListener('click', photoHide, false);
+        p.addEventListener('click', photoShow, false);
+      }
     }
 
     function mobileInit() {
