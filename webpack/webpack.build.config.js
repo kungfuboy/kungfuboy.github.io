@@ -18,7 +18,7 @@ module.exports = merge(basicConfig, {
     ]
   },
   output: {
-    path: resolve('dist'),
+    path: resolve('docs'),
     publicPath: '/vonut/',
     filename: '[name].[chunkhash:8].js',
     chunkFilename: 'js/[name].[chunkhash:8].js'
@@ -67,7 +67,7 @@ module.exports = merge(basicConfig, {
       debug: false
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new CleanWebpackPlugin(['dist'], {
+    new CleanWebpackPlugin(['docs'], {
       root: resolve('./')
     })
   ]

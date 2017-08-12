@@ -1,4 +1,3 @@
-
 const { join } = require('path')
 const hljs = require('highlight.js')
 const OfflinePlugin = require('offline-plugin')
