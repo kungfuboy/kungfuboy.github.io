@@ -1,10 +1,8 @@
-const base = process.env.GH ? '/post/' : '/'
-
 module.exports = {
     title: '鹰春秋',
     description: '前端很大，所以叫大前端',
     dest: 'post',
-    base,
+    base: '/post/',
     serviceWorker: true,
     editLinks: false,
     themeConfig: {
