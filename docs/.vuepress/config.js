@@ -4,6 +4,7 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }]
   ],
+  base: '/bar/',
   serviceWorker: true,
   themeConfig: {
     repo: 'kungfuboy/kungfuboy.github.io',
