@@ -1,13 +1,12 @@
 module.exports = {
   title: 'VuePress',
   description: 'Vue-powered Static Site Generator',
-  dest: 'vuepress',
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }]
   ],
   serviceWorker: true,
   themeConfig: {
-    repo: 'vuejs/vuepress',
+    repo: 'kungfuboy/kungfuboy.github.io',
     editLinks: true,
     docsDir: 'docs',
     nav: [
