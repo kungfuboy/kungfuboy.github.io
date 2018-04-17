@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "f528aec1978ad730d3359ec291a4848f"
+    "revision": "eac7e3c2dd65f2ccd676220baf83fa28"
   },
   {
     "url": "assets/css/7.styles.124d4d69.css",
@@ -60,36 +60,36 @@ self.__precacheManifest = [
     "revision": "16df50657650abe7803c82a9caddf586"
   },
   {
-    "url": "assets/js/app.9b7b5a36.js",
-    "revision": "4f4cbb93d3bb80c992837218b82c02a7"
+    "url": "assets/js/app.2819c844.js",
+    "revision": "422693dc13196bbe6f3c7b33cbb82b99"
   },
   {
     "url": "guide/getting-started.html",
-    "revision": "005d9bc79102ed18a41e6d0915320eb8"
+    "revision": "d0924318f1005caff8cf5bb0fc1d82fe"
   },
   {
     "url": "guide/index.html",
-    "revision": "040a9510b6558faa218b27e194de0248"
+    "revision": "eb5f0f67600b5572aa97f46d3b421987"
   },
   {
     "url": "index.html",
-    "revision": "2207e7f9a104bc27403bd9f267bd1da4"
+    "revision": "79c9462d4c3962fd6787a3767b7e4361"
   },
   {
     "url": "kungfu/index.html",
-    "revision": "c0ca22d024ce7d2b67bef42a79ac6420"
+    "revision": "05e996ded531ae1eaedc7e150d3abcc8"
   },
   {
     "url": "kungfu/taiji-history.html",
-    "revision": "79393dcdd46e336faae5ae8a29bd039e"
+    "revision": "0000bb5d16f57625b84b6d72cb5a9933"
   },
   {
     "url": "suibi/index.html",
-    "revision": "ae446ef0001d5a1a4d6e83d884c62713"
+    "revision": "8ea3a33d60cee13b6300438c47207170"
   },
   {
     "url": "suibi/zhangsanfeng-guoxiang.html",
-    "revision": "368bf7d1bcc105d4ce15f7d692f51030"
+    "revision": "80af557991560b55ab6eb2c48b3c2bb2"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();

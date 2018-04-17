@@ -1,13 +1,15 @@
+const base = process.env.GH ? '/post/' : '/'
+
 module.exports = {
     title: '鹰春秋',
     description: '前端很大，所以叫大前端',
     dest: 'post',
-    head: [
-        ['link', { rel: 'icon', href: `/logo.png` }]
-    ],
+    base,
     serviceWorker: true,
     editLinks: false,
     themeConfig: {
+        repo: 'kungfuboy/kungfuboy.github.io',
+        editLinks: true,
         docsDir: 'docs',
         nav: [
             {
