@@ -1,0 +1,11 @@
+{
+  "name": "kungfuboy.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kungfuboy/kungfuboy.github.io.git",
+  "author": "songjunjie <songjunjie@ygsoft.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vuepress": "^0.5.1"
+  }
+}
