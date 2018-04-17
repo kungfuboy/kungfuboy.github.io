@@ -5,6 +5,10 @@
   "repository": "git@github.com:kungfuboy/kungfuboy.github.io.git",
   "author": "songjunjie <songjunjie@ygsoft.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
   "dependencies": {
     "vuepress": "^0.5.1"
   }
