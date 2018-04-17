@@ -1,45 +1,46 @@
 module.exports = {
-    title: '鹰春秋',
-    description: '前端很大，所以叫大前端',
-    dest: 'post',
-    base: '/post/',
-    serviceWorker: true,
-    editLinks: false,
-    themeConfig: {
-        repo: 'kungfuboy/kungfuboy.github.io',
-        editLinks: true,
-        docsDir: 'docs',
-        nav: [
-            {
-                text: '武术',
-                link: '/kungfu/',
-            },
-            {
-                text: '随笔',
-                link: '/suibi/',
-            }
-        ],
-        sidebar: {
-            '/kungfu/': [
-                {
-                    title: '武术',
-                    collapsable: false,
-                    children: [
-                        '',
-                        'taiji-history'
-                    ]
-                }
-            ],
-            '/suibi/': [
-                {
-                    title: '随笔',
-                    collapsable: false,
-                    children: [
-                        '',
-                        'zhangsanfeng-guoxiang'
-                    ]
-                }
-            ]
+  title: 'VuePress',
+  description: 'Vue-powered Static Site Generator',
+  dest: 'vuepress',
+  head: [
+    ['link', { rel: 'icon', href: `/logo.png` }]
+  ],
+  serviceWorker: true,
+  themeConfig: {
+    repo: 'vuejs/vuepress',
+    editLinks: true,
+    docsDir: 'docs',
+    nav: [
+      {
+        text: 'Guide',
+        link: '/guide/',
+      },
+      {
+        text: 'Config Reference',
+        link: '/config/'
+      },
+      {
+        text: 'Default Theme Config',
+        link: '/default-theme-config/'
+      }
+    ],
+    sidebar: {
+      '/guide/': [
+        {
+          title: 'Guide',
+          collapsable: false,
+          children: [
+            '',
+            'getting-started',
+            'basic-config',
+            'assets',
+            'markdown',
+            'using-vue',
+            'custom-themes',
+            'deploy'
+          ]
         }
+      ]
     }
+  }
 }

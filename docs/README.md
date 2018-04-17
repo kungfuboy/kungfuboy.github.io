@@ -1,15 +1,34 @@
 ---
-title: Home
 home: true
-actionText: Started →
-actionLink: /kungfu/
+heroImage: /hero.png
+actionText: Get Started →
+actionLink: /guide/
 features:
-- title: 武术
-  details: 设计模式、常用算法、编程思想，组件协作
-- title: 常用解决方案
-  details: 垂直居中、整屏滚动、移动端1px、页脚居底
-- title: 技术栈简介
-  details: React、Vue、Mobx、NodeJS、Koa、Webpack、Rollup、Parcel
+- title: Simplicity First
+  details: Minimal setup with markdown-centered project structure helps you focus on writing.
+- title: Vue-Powered
+  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
+- title: Performant
+  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
-# Home Readme
+### As Easy as 1, 2, 3
+
+``` bash
+# install
+yarn global add vuepress # OR npm install -g vuepress
+
+# create a markdown file
+echo '# Hello VuePress' > README.md
+
+# start writing
+vuepress dev
+
+# build to static files
+vuepress build
+```
+
+::: warning NODE VERSION
+Please make sure your version of Node.js is greater than 8.
+:::
