@@ -1,25 +1,25 @@
 module.exports = {
-    title: 'Eagle',
-    description: 'Vue-powered Static Site Generator',
+    title: 'Dark Eagle',
+    description: 'We drink and we sing when our fighting is done.',
     dest: 'vuepress',
     serviceWorker: true,
     themeConfig: {
         repo: 'kungfuboy/kungfuboy.github.io',
-        editLinks: true,
+        editLinks: false,
         docsDir: 'docs',
         nav: [
             {
-                text: 'Guide',
-                link: '/guide/',
+                text: 'Reading',
+                link: '/read/',
             }
         ],
         sidebar: {
-            '/guide/': [
+            '/read/': [
                 {
-                    title: 'Guide',
+                    title: 'Reading',
                     collapsable: false,
                     children: [
-                        ''
+                        'read-day'
                     ]
                 }
             ]
