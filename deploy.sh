@@ -1,7 +1,7 @@
 #!/bin/bash
 yarn build
 cd dist
-mv vuepress/* .
+mv -f vuepress/* .
 rm -rf vuepress
 git add .
 git commit -m 'deploy'
