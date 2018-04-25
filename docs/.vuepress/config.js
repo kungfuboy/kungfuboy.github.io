@@ -9,6 +9,10 @@ module.exports = {
         docsDir: 'docs',
         nav: [
             {
+                text: 'Kungfu',
+                link: '/kungfu/',
+            },
+            {
                 text: 'Reading',
                 link: '/read/',
             }
@@ -20,6 +24,15 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'read-day'
+                    ]
+                }
+            ],
+            '/kungfu/': [
+                {
+                    title: 'Kungfu',
+                    collapsable: false,
+                    children: [
+                        'taiji-history'
                     ]
                 }
             ]
