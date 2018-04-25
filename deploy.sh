@@ -9,3 +9,5 @@ cd ..
 git add .
 git commit -m'deploy'
 git push origin edit --force
+
+# git remote add origin git@github.com:kungfuboy/kungfuboy.github.io.git
