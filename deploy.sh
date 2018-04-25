@@ -1,9 +1,12 @@
 #!/bin/bash
 yarn build
-cd vuepress
+cd dist
+mv vuepress/* .
+rm -rf vuepress
 git add .
 git commit -m 'deploy'
-
-git remote add origin https://github.com/kungfuboy/kungfuboy.github.io.git
-git push -u origin master
+git push -u origin master --force
 cd ..
+git add .
+git commit -m'deploy'
+git push origin edit --force

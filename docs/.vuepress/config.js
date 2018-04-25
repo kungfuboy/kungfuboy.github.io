@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Dark Eagle',
     description: 'We drink and we sing when our fighting is done.',
-    dest: 'vuepress',
+    dest: 'dist/vuepress',
     serviceWorker: true,
     themeConfig: {
         repo: 'kungfuboy/kungfuboy.github.io',
