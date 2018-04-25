@@ -1,8 +1,7 @@
 #!/bin/bash
 yarn build
 cd dist
-mv -f vuepress/* .
-rm -rf vuepress
+cp -r ./vuepress/* ./ && rm -rf ./vuepress
 git add .
 git commit -m 'deploy'
 git push -u origin master --force
