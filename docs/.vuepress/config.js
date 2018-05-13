@@ -1,8 +1,9 @@
 module.exports = {
     title: 'Dark Eagle',
     description: 'We drink and we sing when our fighting is done.',
-    dest: 'dist/vuepress',
+    dest: 'docs/.vuepress/dist',
     serviceWorker: true,
+    base: '/',
     themeConfig: {
         repo: 'kungfuboy/kungfuboy.github.io',
         editLinks: false,
@@ -33,6 +34,15 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'taiji-history'
+                    ]
+                }
+            ],
+            '/think/': [
+                {
+                    title: 'Think',
+                    collapsable: false,
+                    children: [
+                        'last-year'
                     ]
                 }
             ]

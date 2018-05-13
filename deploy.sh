@@ -1,13 +1,25 @@
-#!/bin/bash
-yarn build
-cd dist
-cp -r ./vuepress/* ./ && rm -rf ./vuepress
-git add .
-git commit -m 'deploy'
-git push -u origin master --force
-cd ..
-git add .
-git commit -m'deploy'
-git push origin edit --force
+#!/usr/bin/env sh
 
-# git remote add origin git@github.com:kungfuboy/kungfuboy.github.io.git
+# abort on errors
+set -e
+
+# build
+npm run build
+
+# navigate into the build output directory
+cd docs/.vuepress/dist
+
+# if you are deploying to a custom domain
+# echo 'www.example.com' > CNAME
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# if you are deploying to https://<USERNAME>.github.io
+git push -f git@github.com:kungfuboy/kungfuboy.github.io.git master
+
+# if you are deploying to https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+
+cd -
