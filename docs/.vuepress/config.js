@@ -42,7 +42,8 @@ module.exports = {
                     title: 'Think',
                     collapsable: false,
                     children: [
-                        'last-year'
+                        'last-year',
+                        'traffic-accident'
                     ]
                 }
             ]
