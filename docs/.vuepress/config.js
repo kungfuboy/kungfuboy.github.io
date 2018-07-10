@@ -43,7 +43,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'last-year',
-                        'traffic-accident'
+                        'traffic-accident',
+                        'legal-high'
                     ]
                 }
             ]
