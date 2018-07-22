@@ -44,7 +44,8 @@ module.exports = {
                     children: [
                         'last-year',
                         'traffic-accident',
-                        'ion-machine'
+                        'legal-high',
+                        'ion-machine',
                     ]
                 }
             ]
